@@ -92,6 +92,7 @@ fn store_entity(connection: &Connection, entity: Entity) -> rusqlite::Result<()>
     Ok(())
 }
 
+#[allow(clippy::manual_is_multiple_of)]
 fn main() -> ExitCode {
     let arguments = Arguments::parse();
 
